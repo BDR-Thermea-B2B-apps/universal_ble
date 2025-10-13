@@ -36,6 +36,8 @@ namespace universal_ble
                 WS_CHILD | WS_VISIBLE | BS_FLAT,
                 btnOK.x, btnOK.y, btnOK.width, btnOK.height,
                 hwnd, (HMENU)ID_btnOK, NULL, NULL);
+
+                SetFocus(txtEditHandle); // Automatically focus the PIN input field
             break;
         }
         case WM_COMMAND:
