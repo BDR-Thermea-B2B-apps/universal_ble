@@ -1,3 +1,6 @@
+## 0.21.2
+* Automatically focus on input field when pairing code dialog is opened on Windows
+
 ## 0.21.1
 * Fix device name resolution on Windows
 * Add `exclusionFilters` to filter out devices from scan results

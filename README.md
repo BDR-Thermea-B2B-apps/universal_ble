@@ -1,10 +1,14 @@
 # Universal BLE
 
-[![universal_ble version](https://img.shields.io/pub/v/universal_ble?label=universal_ble)](https://pub.dev/packages/universal_ble)
+This is a fork of [universal_ble](https://pub.dev/packages/universal_ble) by Navideck Labs OÜ.
+
+Modifications in this fork:
+
+- Automatically focus on input field when pairing code dialog is opened on Windows
+
+[![universal_ble_fork version](https://img.shields.io/pub/v/universal_ble_fork?label=universal_ble_fork)](https://pub.dev/packages/universal_ble_fork)
 
 A cross-platform (Android/iOS/macOS/Windows/Linux/Web) Bluetooth Low Energy (BLE) plugin for Flutter.
-
-[Try it online](https://navideck.github.io/universal_ble/), provided your browser supports [Web Bluetooth](https://caniuse.com/web-bluetooth).
 
 ## Features
 
@@ -41,17 +45,17 @@ A cross-platform (Android/iOS/macOS/Windows/Linux/Web) Bluetooth Low Energy (BLE
 
 ## Getting Started
 
-Add universal_ble in your pubspec.yaml:
+Add universal_ble_fork in your pubspec.yaml:
 
 ```yaml
 dependencies:
-  universal_ble:
+  universal_ble_fork:
 ```
 
 and import it wherever you want to use it:
 
 ```dart
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 ```
 
 ### Scanning
@@ -567,13 +571,3 @@ UniversalBle.setInstance(UniversalBleMock());
 ## Low level API
 
 For more granular control, you can use the [Low-Level API](README.low_level.md). This API is "Device ID"-based, offering greater flexibility by enabling direct calls without the need for object instances.
-
-## 🧩 Apps using Universal BLE
-
-Here are some of the apps leveraging the power of `universal_ble` in production:
-
-| <img src="assets/bt_cam_icon.svg" alt="BT Cam Icon" width="224" height="224"> | [**BT Cam**](https://btcam.app)<br>A Bluetooth remote app for DSLR and mirrorless cameras. Compatible with Canon, Nikon, Sony, Fujifilm, GoPro, Olympus, Panasonic, Pentax, and Blackmagic. Built using Universal BLE to connect and control cameras across iOS, Android, macOS, Windows, Linux & Web. |
-|:--:|:--|
-> 💡 **Built something cool with Universal BLE?**  
-> We'd love to showcase your app here!  
-> Open a pull request and add it to this section. Please include your app icon in svg!
