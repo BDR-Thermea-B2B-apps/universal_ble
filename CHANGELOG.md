@@ -1,4 +1,4 @@
-## 0.21.2
+## 0.22.0
 * Automatically focus on input field when pairing code dialog is opened on Windows
 
 ## 0.21.1
