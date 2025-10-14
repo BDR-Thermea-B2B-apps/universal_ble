@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:universal_ble/src/utils/universal_ble_stream_controller.dart';
+import 'package:universal_ble_fork/src/utils/universal_ble_stream_controller.dart';
 
 void main() {
   group("Test UniversalBleStreamController", () {

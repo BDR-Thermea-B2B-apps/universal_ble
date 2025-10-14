@@ -6,7 +6,7 @@ import FlutterMacOS
 import Foundation
 
 import device_info_plus
-import universal_ble
+import universal_ble_fork
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   DeviceInfoPlusMacosPlugin.register(with: registry.registrar(forPlugin: "DeviceInfoPlusMacosPlugin"))

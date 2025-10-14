@@ -396,13 +396,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
-  universal_ble:
+  universal_ble_fork:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.21.1"
+    version: "0.21.2"
   vector_math:
     dependency: transitive
     description:

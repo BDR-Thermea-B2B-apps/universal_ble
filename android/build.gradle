@@ -1,4 +1,4 @@
-group 'com.navideck.universal_ble'
+group 'com.bdrthermea.universal_ble'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.navideck.universal_ble'
+        namespace 'com.bdrthermea.universal_ble'
     }
 
     compileSdkVersion 34

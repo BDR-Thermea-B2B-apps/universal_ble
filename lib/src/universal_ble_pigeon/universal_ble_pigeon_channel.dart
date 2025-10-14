@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:universal_ble/src/universal_ble_pigeon/universal_ble.g.dart';
-import 'package:universal_ble/src/utils/universal_ble_filter_util.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/src/universal_ble_pigeon/universal_ble.g.dart';
+import 'package:universal_ble_fork/src/utils/universal_ble_filter_util.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 class UniversalBlePigeonChannel extends UniversalBlePlatform {
   static UniversalBlePigeonChannel? _instance;

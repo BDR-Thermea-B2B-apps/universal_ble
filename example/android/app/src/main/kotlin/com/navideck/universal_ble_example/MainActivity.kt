@@ -1,4 +1,4 @@
-package com.navideck.universal_ble_example
+package com.bdrthermea.universal_ble_example
 
 import io.flutter.embedding.android.FlutterActivity
 

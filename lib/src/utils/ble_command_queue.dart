@@ -1,5 +1,5 @@
-import 'package:universal_ble/src/queue.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/src/queue.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 /// Set queue type and queue commands
 class BleCommandQueue {

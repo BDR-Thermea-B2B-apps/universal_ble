@@ -1,4 +1,4 @@
-import 'package:universal_ble/src/models/model_exports.dart';
+import 'package:universal_ble_fork/src/models/model_exports.dart';
 
 /// Manages an in-memory cache for Bluetooth devices
 class CacheHandler {

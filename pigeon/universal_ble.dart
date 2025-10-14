@@ -7,9 +7,9 @@ import 'package:pigeon/pigeon.dart';
     dartOut: 'lib/src/universal_ble_pigeon/universal_ble.g.dart',
     dartOptions: DartOptions(),
     kotlinOut:
-        'android/src/main/kotlin/com/navideck/universal_ble/UniversalBle.g.kt',
+        'android/src/main/kotlin/com/bdrthermea/universal_ble/UniversalBle.g.kt',
     swiftOut: 'darwin/Classes/UniversalBle.g.swift',
-    kotlinOptions: KotlinOptions(package: 'com.navideck.universal_ble'),
+    kotlinOptions: KotlinOptions(package: 'com.bdrthermea.universal_ble'),
     swiftOptions: SwiftOptions(),
     cppOptions: CppOptions(namespace: 'universal_ble'),
     cppHeaderOut: 'windows/src/generated/universal_ble.g.h',

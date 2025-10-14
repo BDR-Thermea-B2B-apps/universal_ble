@@ -1,5 +1,5 @@
-import 'package:universal_ble/src/utils/cache_handler.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/src/utils/cache_handler.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 /// Extension methods for [BleDevice] to simplify common operations.
 extension BleDeviceExtension on BleDevice {

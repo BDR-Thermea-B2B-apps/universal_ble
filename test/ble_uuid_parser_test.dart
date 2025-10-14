@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 void main() {
   group('Parsing string', () {

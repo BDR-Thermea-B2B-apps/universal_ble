@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   permission_handler: ^11.3.1
   device_info_plus: ^9.0.2
-  universal_ble:
+  universal_ble_fork:
     path: ../
 
 dev_dependencies:

@@ -1,4 +1,4 @@
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 /// Extension methods for [BleService] objects.
 extension BleServiceExtension on BleService {

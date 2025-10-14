@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:typed_data';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 /// Extension methods for [BleCharacteristic] to simplify common operations.
 extension BleCharacteristicExtension on BleCharacteristic {

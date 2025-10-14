@@ -3,8 +3,8 @@ import 'dart:collection';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_web_bluetooth/flutter_web_bluetooth.dart';
-import 'package:universal_ble/src/utils/universal_logger.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/src/utils/universal_logger.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 
 class UniversalBleWeb extends UniversalBlePlatform {
   static UniversalBleWeb? _instance;

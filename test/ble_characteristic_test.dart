@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 import 'universal_ble_test_mock.dart';
 
 String serviceId = "180a";

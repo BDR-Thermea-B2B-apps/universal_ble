@@ -1,4 +1,4 @@
-package com.navideck.universal_ble
+package com.bdrthermea.universal_ble
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice

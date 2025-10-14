@@ -1,4 +1,4 @@
-package com.navideck.universal_ble
+package com.bdrthermea.universal_ble
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothManager

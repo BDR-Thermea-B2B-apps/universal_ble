@@ -1,4 +1,4 @@
-package com.navideck.universal_ble
+package com.bdrthermea.universal_ble
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -986,7 +986,7 @@ class UniversalBlePlugin : UniversalBlePlatformChannel, BluetoothGattCallback(),
 
     private fun setCachedServices(deviceId: String, services: List<String>) {
         val cachedServicesSharedPref = context.getSharedPreferences(
-            "com.navideck.universal_ble.services",
+            "com.bdrthermea.universal_ble.services",
             Context.MODE_PRIVATE
         )
         cachedServicesSharedPref.edit().putStringSet(deviceId, services.toSet()).apply()
@@ -995,7 +995,7 @@ class UniversalBlePlugin : UniversalBlePlatformChannel, BluetoothGattCallback(),
 
     private fun getCachedServicesMap(): Map<String, List<String>> {
         val cachedServicesSharedPref = context.getSharedPreferences(
-            "com.navideck.universal_ble.services",
+            "com.bdrthermea.universal_ble.services",
             Context.MODE_PRIVATE
         )
         return cachedServicesSharedPref.all.mapValues { (_, value) ->

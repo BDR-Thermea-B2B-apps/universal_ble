@@ -1,4 +1,4 @@
-package com.navideck.universal_ble
+package com.bdrthermea.universal_ble
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

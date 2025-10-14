@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:universal_ble/universal_ble.dart';
+import 'package:universal_ble_fork/universal_ble.dart';
 import 'package:universal_ble_example/data/mock_universal_ble.dart';
 import 'package:universal_ble_example/home/widgets/scan_filter_widget.dart';
 import 'package:universal_ble_example/home/widgets/scanned_devices_placeholder_widget.dart';
