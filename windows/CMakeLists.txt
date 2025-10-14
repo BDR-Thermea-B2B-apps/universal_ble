@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.21)
-set(PROJECT_NAME "universal_ble")
+set(PROJECT_NAME "universal_ble_fork")
 project(${PROJECT_NAME} LANGUAGES CXX)
 cmake_policy(VERSION 3.14...3.25)
 include(FetchContent)
 set(CPPWINRT_VERSION "2.0.220418.1")
-set(PLUGIN_NAME "universal_ble_plugin")
+set(PLUGIN_NAME "universal_ble_fork_plugin")
 
 # ############### NuGet intall begin ################
 FetchContent_Declare(nuget
@@ -49,7 +49,7 @@ list(APPEND PLUGIN_SOURCES
 )
 
 add_library(${PLUGIN_NAME} SHARED
-  "include/universal_ble/universal_ble_plugin_c_api.h"
+  "include/universal_ble_fork/universal_ble_plugin_c_api.h"
   "universal_ble_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )
