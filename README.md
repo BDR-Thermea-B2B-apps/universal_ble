@@ -6,6 +6,8 @@ Modifications in this fork:
 
 - Automatically focus on input field when pairing code dialog is opened on Windows
 
+---
+
 [![universal_ble_fork version](https://img.shields.io/pub/v/universal_ble_fork?label=universal_ble_fork)](https://pub.dev/packages/universal_ble_fork)
 
 A cross-platform (Android/iOS/macOS/Windows/Linux/Web) Bluetooth Low Energy (BLE) plugin for Flutter.
