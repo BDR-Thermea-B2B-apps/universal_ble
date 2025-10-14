@@ -20,6 +20,21 @@ namespace universal_ble
     const SizeAndPos_t txtEdit = {50, 40, 320, 40};
     const SizeAndPos_t btnOK = {50, 100, 320, 40};
 
+    // Original edit control procedure storage
+    WNDPROC oldEditProc = nullptr;
+
+    // Subclass procedure to catch Enter key
+    LRESULT CALLBACK EditSubclassProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+    {
+        if (msg == WM_KEYDOWN && wParam == VK_RETURN)
+        {
+            // Forward Enter key as OK button click
+            SendMessage(GetParent(hwnd), WM_COMMAND, ID_btnOK, 0);
+            return 0; // eat the message
+        }
+        return CallWindowProc(oldEditProc, hwnd, msg, wParam, lParam);
+    }
+
     LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
     {
         switch (msg)
@@ -31,13 +46,27 @@ namespace universal_ble
                 WS_CHILD | WS_VISIBLE | WS_BORDER | ES_NUMBER,
                 txtEdit.x, txtEdit.y, txtEdit.width, txtEdit.height,
                 hwnd, (HMENU)ID_txtEdit, NULL, NULL);
+
+            // Subclass the edit control so Enter triggers OK
+            oldEditProc = (WNDPROC)SetWindowLongPtr(txtEditHandle, GWLP_WNDPROC, (LONG_PTR)EditSubclassProc);
+
             CreateWindow(
                 TEXT("Button"), TEXT("OK"),
                 WS_CHILD | WS_VISIBLE | BS_FLAT,
                 btnOK.x, btnOK.y, btnOK.width, btnOK.height,
                 hwnd, (HMENU)ID_btnOK, NULL, NULL);
 
-                SetFocus(txtEditHandle); // Automatically focus the PIN input field
+            // Automatically focus the PIN input field
+            SetFocus(txtEditHandle);
+            break;
+        }
+        case WM_KEYDOWN:
+        {
+            if (wParam == VK_RETURN)
+            { // Enter key pressed
+                SendMessage(hwnd, WM_COMMAND, ID_btnOK, 0);
+                return 0;
+            }
             break;
         }
         case WM_COMMAND:
