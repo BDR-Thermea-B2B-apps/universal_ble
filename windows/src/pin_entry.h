@@ -74,10 +74,12 @@ namespace universal_ble
             {
                 GetWindowText(txtEditHandle, textBoxText, sizeof(textBoxText) / sizeof(TCHAR));
                 DestroyWindow(hwnd);
+                PostQuitMessage(0);
             }
             break;
         case WM_CLOSE:
             DestroyWindow(hwnd);
+            PostQuitMessage(0);
             break;
         case WM_DESTROY:
             PostQuitMessage(0);
@@ -162,7 +164,6 @@ namespace universal_ble
         }
 
         DeleteObject(hFont);
-        DestroyWindow(hwnd);
         UnregisterClass(mainWindowClass.lpszClassName, hInstance);
         return winrt::to_hstring(textBoxText);
     }
