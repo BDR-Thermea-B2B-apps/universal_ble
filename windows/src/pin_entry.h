@@ -123,7 +123,11 @@ namespace universal_ble
         // After creating the window, make it topmost
         SetWindowPos(hwnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 
+        // Show the window and explicitly bring it to the foreground
         ShowWindow(hwnd, SW_SHOW);
+        BringWindowToTop(hwnd);
+        SetForegroundWindow(hwnd);
+        SetActiveWindow(hwnd);
 
         // Create a font with the desired size
         HFONT hFont = CreateFont(
