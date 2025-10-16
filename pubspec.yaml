@@ -1,6 +1,6 @@
 name: universal_ble_fork
 description: A cross-platform (Android/iOS/macOS/Windows/Linux/Web) Bluetooth Low Energy (BLE) plugin for Flutter
-version: 0.22.1
+version: 0.22.2
 repository: https://github.com/BDR-Thermea-B2B-apps/universal_ble
 
 topics:

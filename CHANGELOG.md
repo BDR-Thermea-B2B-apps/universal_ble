@@ -1,3 +1,6 @@
+## 0.22.2
+* Fix Windows BLE pairing dialog crash
+
 ## 0.22.1
 * Fix Windows dialog focus issue (SetForegroundWindow)
 

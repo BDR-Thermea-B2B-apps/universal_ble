@@ -5,6 +5,7 @@ This is a fork of [universal_ble](https://pub.dev/packages/universal_ble) by Nav
 Modifications in this fork:
 
 - Automatically focus on input field when pairing code dialog is opened on Windows
+- Fix Windows BLE pairing dialog crash
 
 ---
 
