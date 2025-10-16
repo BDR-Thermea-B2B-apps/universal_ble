@@ -1,3 +1,6 @@
+## 0.22.1
+* Fix Windows dialog focus issue (SetForegroundWindow)
+
 ## 0.22.0
 * Automatically focus on input field when pairing code dialog is opened on Windows
 
