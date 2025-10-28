@@ -3,7 +3,7 @@
 # Run `pod lib lint universal_ble.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'universal_ble'
+  s.name             = 'universal_ble_fork'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
